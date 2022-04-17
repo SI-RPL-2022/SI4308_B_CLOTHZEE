@@ -10,7 +10,7 @@
 
 <body>
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color : #964B00">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color : #A96B1E">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">BACA YA, INI KALIAN GANTI" LG AJA BELOM FIX CUMA NYOBA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
