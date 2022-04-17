@@ -1,86 +1,178 @@
 @extends('layout.template')
 
 @section('konten')
+
+<br>
+<!-- row pertama -->
 <div class="row">
-    <div class="col">
-        <div class="row m-5">
-        <div class="container">
-              <section id="reserve" class="reserve">
-                <div class="row pt-1 mb-1">
-                  <div class="col">
-                  </div>
-                </div>
 
-                <div class="row">
-                  <div class="col">
-                    <div class="row m-1" style="width: 18rem;">
-                      <img src="img/kemeja.jpeg" alt="">
-                    </div>
-                  </div>
+  <div class="col-5 text-center">
+    <img src="img/kemeja.jpeg" alt="" width="300" height="300">
+  </div>
 
-                  <div class="col">
-                    <form method="POST" action="check.php">
-                      <div class="mb-3 d-flex justify-content-center">
-                          <h3><b>Selamat Datang di Konfeksi Ujang Tailor</b> </h3>
-                      </div>
-                      <div class="mb-3 text-justify">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente non eaque esse deserunt illum, nam ab facere aliquam eligendi molestiae voluptatum vel. Veritatis doloremque temporibus corporis, animi saepe sit est.
-                              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo in repudiandae et, deserunt maxime reprehenderit eligendi voluptas sint dolor nobis, quis commodi sed placeat similique maiores iste dicta ipsa officia?
-                      </div>
-                      <div class="mb-3">
+  <div class="col-7">
+    <h3 class=" text-center"><b>Selamat Datang di Konfeksi Ujang Tailor</b></h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, porro voluptas! Quibusdam, possimus quisquam maxime libero quis neque? Consectetur odio natus voluptatibus veritatis hic error expedita dolorem earum tempore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quibusdam corporis perferendis modi excepturi, deleniti nisi, eligendi unde rem necessitatibus, perspiciatis architecto beatae ad porro laborum dolor obcaecati ullam! Possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta, numquam tempore voluptatibus, optio, voluptate ducimus molestiae sit possimus rem sunt incidunt totam? Quas deleniti, sapiente nulla obcaecati accusamus voluptatem!</p>
+  </div>
+</div>
+<!-- row pertama -->
 
-                      </div>
-                      <div class="mb-3">
-                        <label for="duration" class="form-label">Duration (Hours)</label>
-                        <input type="number" class="form-control" name="duration" id="duration" Required>
-                      </div>
-                      <div class="mb-3">
-                        <label for="building" class="form-label">Building Type</label>
-                        <select class="form-select" name="building" id="building" required>
-                          <option selected disabled value="">Choose...</option>
-                          <option value="Nusantara Hall">Nusantara Hall</option>
-                          <option value="Garuda Hall" selected>Garuda Hall</option>
-                          <option value="Gedung Serba Guna">Gedung Serba Guna</option>
-                        </select>
-                        <div class="invalid-feedback">
-                          Pilih gedung yang anda inginkan!
-                        </div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="phone" class="form-label">Phone Number</label>
-                        <input type="number" class="form-control" name="phone" id="phone" aria-describedby="text">
-                      </div>
+<!-- row kedua -->
+<div class="row mt-5 ">
 
-                      <label for="service" class="form-label">Add Service(s)</label> 
-                      <div class="form-check" id="service" >
-                        <input class="form-check-input" type="checkbox" value="Catering" id="flexCheckDefault" name="service">
-                        <label class="form-check-label" for="flexCheckDefault">
-                          Catering / $700
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Decoration" id="flexCheckChecked" name="service[]" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                          Decoration / $450
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="Sound System" id="flexCheckChecked" name="service[]" checked>
-                        <label class="form-check-label" for="flexCheckChecked">
-                          Sound System / $250
-                        </label>
-                      </div>
-                      
-                      <div class="d-grid gap-2" style="padding-top: 20px;">
-                        <button class="btn btn-primary" type="submit" name="input">Book Now</button>
-                      </div>
-                  </form>
-                  </div>
-              </section>
-            </div>
+  <div class="col-5 ">
+    <h5 class=" text-center">Social Media</h5>
+    <p> instagram : @dikrandik</p>
+    <p>WA : 082219122468</p>
+  </div>
+
+  <div class="col-7 text-center">
+    <h4>Produk yang dihasilkan</h4>
+    <p>Pada konfeksi kami telah menghasilkan beberapa produk dan hasilnya tertera seperti dibawah ini </p>
+  <!-- card foto -->
+      <div class="card-group">
+        <div class="card m-2" style="width: 12rem;">
+          <img src="img/celana.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Celana bahan</h5>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 10rem;">
+          <img src="img/batik.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Kemeja</h5>
+          </div>
+        </div>
+        <div class="card m-2" style="width: 12rem;">
+          <img src="img/rok.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rok</h5>
+          </div>
+        </div>
+      </div>
+  <!-- card foto -->
+  </div>
+</div>
+<!-- row kedua -->
+
+<div class="pesan text-center">
+  <h4>PEMESANAN PRODUK</h4>
+
+
+
+
+<form action="" method="POST">
+<div class="d-flex">
+
+  <div class="card m-2" style="width: 12rem;">
+    <label>
+      <input type="radio" name="test" value="small" checked>
+      <img src="img/celana.jpg">
+    </label>
+    <h5 class="card-title">Card title</h5>
+  </div>
+
+  <div class="card m-2" style="width: 12rem;">
+    <label>
+      <input type="radio" name="test" value="small" checked>
+      <img src="img/celana.jpg">
+    </label>
+    <h5 class="card-title">Card title</h5>
+  </div>
+
+  <div class="card m-2" style="width: 12rem;">
+    <label>
+      <input type="radio" name="test" value="small" checked>
+      <img src="img/celana.jpg">
+    </label>
+    <h5 class="card-title">Card title</h5>
+  </div>
+
+  <div class="card m-2" style="width: 12rem;">
+    <label>
+      <input type="radio" name="test" value="small" checked>
+      <img src="img/celana.jpg">
+    </label>
+    <h5 class="card-title">Card title</h5>
+  </div>
+
+  
+
+  </label>
+</form>
+<!-- pesanan -->
+  <div class="d-flex">
+
+    <div class="card m-2">
+      <label>
+        <input type="radio" name="test" value="small" checked>
+        <img src="https://via.placeholder.com/40x60/0bf/fff&text=A">
+      </label>
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          
         </div>
     </div>
+
+    <div class="card m-2">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        
+      </div>
+    </div>
+
+    <div class="card m-2">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        
+      </div>
+    </div>
+
+    <div class="card m-2">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+      </div>
+    </div>
+  
+  </div>
+
+  <div class="d-flex">
+
+  <div class="card m-2">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+    </div>
+  </div>
+
+  <div class="card m-2">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>     
+    </div>
+  </div>
+
+  <div class="card m-2">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>      
+    </div>
+  </div>
+
+  <div class="card m-2">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>      
+    </div>
+  </div>
 </div>
+</div>
+<!-- pesanan -->
+
+
 @endsection
 </body>
 </html>
