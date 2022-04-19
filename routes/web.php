@@ -20,3 +20,4 @@ Route::get('/', function () {
 Route::get('/detail_produk', function () {
     return view('detail_produk');
 });
+// Cuman buat push ke branch baru
