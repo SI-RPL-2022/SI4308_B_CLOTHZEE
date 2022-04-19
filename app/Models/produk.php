@@ -4,12 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\produk;
+use App\Models\toko;
 
-class toko extends Model
+class produk extends Model
 {
     use HasFactory;
-    public function produk(){
-        return $this->hasMany(produk::class, 'id_toko');
-    }
+    public function toko(){
+        return $this-> belongsTo(toko::class);
+    } 
 }
