@@ -21,6 +21,6 @@ Route::get('/detail_produk', function () {
     return view('detail_produk');
 });
 
-Route::get('/pemesanan', function () {
-    return view('pemesanan');
-});
+
+// Cuman buat push ke branch baru
+
