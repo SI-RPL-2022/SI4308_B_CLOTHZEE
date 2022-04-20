@@ -24,3 +24,7 @@ Route::get('/detail_produk', function () {
 Route::get('/pemesanan', function () {
     return view('pemesanan');
 });
+
+Route::get('/pembayaran', function () {
+    return view('pembayaran');
+});
