@@ -9,7 +9,6 @@ use App\Models\produk;
 class toko extends Model
 {
     use HasFactory;
-
     protected $fillable = [
         'nama', 'deskripsi', 'lokasi', 'whatsapp', 'instagram'
     ];
