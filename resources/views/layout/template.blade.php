@@ -5,7 +5,7 @@
 
 <style>
   body{
-
+	background: whitesmoke;
 	font-family: 'Poppins', sans-serif;
 	color: black;
 }
