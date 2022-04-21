@@ -5,18 +5,24 @@
   body {
     text-align: center;
   }
-  label > input{ /* Menyembunyikan radio button */
-          visibility: hidden; 
-          position: absolute; 
-        }
-        label > input + img{ /* style gambar */
-          cursor:pointer;
-          border:2px solid transparent;
-        }
-        label > input:checked + img{ /* (RADIO CHECKED) style gambar */
-          border:2px solid #f00;
-        }
- </style>
+
+  label>input {
+    /* Menyembunyikan radio button */
+    visibility: hidden;
+    position: absolute;
+  }
+
+  label>input+img {
+    /* style gambar */
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+
+  label>input:checked+img {
+    /* (RADIO CHECKED) style gambar */
+    border: 2px solid #f00;
+  }
+</style>
 <br>
 <!-- row pertama -->
 <div class="row mt-4">
@@ -60,79 +66,79 @@
   <div class="col-7">
     <h3 class=" text-center mb-4"><b>Selamat Datang di Konfeksi Ujang Tailor</b></h3>
     <div style="text-align:justify;">
-        <p>   Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, porro voluptas! Quibusdam, possimus quisquam 
-          maxime libero quis neque? Consectetur odio natus voluptatibus veritatis hic error expedita dolorem earum tempore cum.
-           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quibusdam corporis perferendis modi excepturi, 
-           deleniti nisi, eligendi unde rem necessitatibus, perspiciatis architecto beatae ad porro laborum dolor obcaecati 
-           ullam! Possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta, numquam tempore voluptatibus,
-            optio, voluptate ducimus molestiae sit possimus rem sunt incidunt totam? Quas deleniti, sapiente nulla obcaecati 
-            accusamus voluptatem!</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quibusdam, autem eos dolore labore sint inventore nihil! Voluptatem totam, omnis assumenda, blanditiis quas explicabo rem autem nobis fugiat dolorum quod.</p>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, porro voluptas! Quibusdam, possimus quisquam
+        maxime libero quis neque? Consectetur odio natus voluptatibus veritatis hic error expedita dolorem earum tempore cum.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quibusdam corporis perferendis modi excepturi,
+        deleniti nisi, eligendi unde rem necessitatibus, perspiciatis architecto beatae ad porro laborum dolor obcaecati
+        ullam! Possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta, numquam tempore voluptatibus,
+        optio, voluptate ducimus molestiae sit possimus rem sunt incidunt totam? Quas deleniti, sapiente nulla obcaecati
+        accusamus voluptatem!</p>
+      <br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quibusdam, autem eos dolore labore sint inventore nihil! Voluptatem totam, omnis assumenda, blanditiis quas explicabo rem autem nobis fugiat dolorum quod.</p>
     </div>
 
     <div class="mt-5">
       <h4 class="mb-2"><b>Produk yang dihasilkan</b> </h4>
       <p>Pada konfeksi kami telah menghasilkan beberapa produk dan hasilnya tertera seperti dibawah ini </p>
-  <!-- card foto -->
+      <!-- card foto -->
 
-  <!-- carousel -->
-  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-    <div class="card-group">
-        <div class="card m-2" style="width: 12rem;">
-          <img src="img/celana.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Celana bahan</h5>
+      <!-- carousel -->
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="card-group">
+              <div class="card m-2" style="width: 12rem;">
+                <img src="img/celana.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Celana bahan</h5>
+                </div>
+              </div>
+              <div class="card m-2" style="width: 10rem;">
+                <img src="img/batik.jpeg" style="width: 231px; height:233px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kemeja</h5>
+                </div>
+              </div>
+              <div class="card m-2" style="width: 12rem;">
+                <img src="img/rok.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Rok</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <div class="card-group">
+              <div class="card m-2" style="width: 12rem;">
+                <img src="img/celana.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><b>Celana bahan</b></h5>
+                </div>
+              </div>
+              <div class="card m-2" style="width: 50px;">
+                <img src="img/batik.jpeg" style="width: 231px; height:233px;" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><b>Kemeja</b></h5>
+                </div>
+              </div>
+              <div class="card m-2" style="width: 12rem;">
+                <img src="img/rok.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"><b>Rok</b></h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card m-2" style="width: 10rem;">
-          <img src="img/batik.jpeg" style="width: 231px; height:233px;" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Kemeja</h5>
-          </div>
-        </div>
-        <div class="card m-2" style="width: 12rem;">
-          <img src="img/rok.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Rok</h5>
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-    <div class="card-group">
-        <div class="card m-2" style="width: 12rem;">
-          <img src="img/celana.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Celana bahan</h5>
-          </div>
-        </div>
-        <div class="card m-2" style="width: 50px;">
-        <img src="img/batik.jpeg" style="width: 231px; height:233px;" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Kemeja</h5>
-          </div>
-        </div>
-        <div class="card m-2" style="width: 12rem;">
-          <img src="img/rok.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Rok</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
     </div>
   </div>
 </div>
@@ -141,87 +147,94 @@
 <div class="pesan text-center mt-5 mb-2">
   <h4><b>PEMESANAN PRODUK</b> </h4>
 </div>
-  <form>
-    <div class="d-flex align-content-between flex-wrap text-center">
+<form>
+  <div class="d-flex align-content-between flex-wrap text-center">
 
 
     <div class="card m-2">
       <label>
-          <input type="radio" name="emoji" id="emoji">
-          <img src="img/celana.jpg" width="300px">
-          <div class="card-body">
-            <h5 class="card-title"><b>Celana Panjang</b> </h5>
-          </div>
+        <input type="radio" name="emoji" id="emoji">
+        <img src="img/celana.jpg" width="300px">
+        <div class="card-body">
+          <h5 class="card-title"><b>Celana Panjang</b> </h5>
+        </div>
       </label>
     </div>
     <div class="card m-2">
       <label>
-          <input type="radio" name="emoji" id="emoji">
-          <img src="img/celana.jpg" width="300px">
-          <div class="card-body">
-            <h5 class="card-title"><b>Celana Panjang</b> </h5>
-          </div>
+        <input type="radio" name="emoji" id="emoji">
+        <img src="img/celana.jpg" width="300px">
+        <div class="card-body">
+          <h5 class="card-title"><b>Celana Panjang</b> </h5>
+        </div>
       </label>
-    </div>    <div class="card m-2">
+    </div>
+    <div class="card m-2">
       <label>
-          <input type="radio" name="emoji" id="emoji">
-          <img src="img/celana.jpg" width="300px">
-          <div class="card-body">
-            <h5 class="card-title"><b>Celana Panjang</b> </h5>
-          </div>
+        <input type="radio" name="emoji" id="emoji">
+        <img src="img/celana.jpg" width="300px">
+        <div class="card-body">
+          <h5 class="card-title"><b>Celana Panjang</b> </h5>
+        </div>
       </label>
-    </div>    <div class="card m-2">
+    </div>
+    <div class="card m-2">
       <label>
-          <input type="radio" name="emoji" id="emoji">
-          <img src="img/celana.jpg" width="300px">
-          <div class="card-body">
-            <h5 class="card-title"><b>Celana Panjang</b> </h5>
-          </div>
+        <input type="radio" name="emoji" id="emoji">
+        <img src="img/celana.jpg" width="300px">
+        <div class="card-body">
+          <h5 class="card-title"><b>Celana Panjang</b> </h5>
+        </div>
       </label>
-    </div>    <div class="card m-2">
+    </div>
+    <div class="card m-2">
       <label>
-          <input type="radio" name="emoji" id="emoji">
-          <img src="img/celana.jpg" width="300px">
-          <div class="card-body">
-            <h5 class="card-title"><b>Celana Panjang</b> </h5>
-          </div>
+        <input type="radio" name="emoji" id="emoji">
+        <img src="img/celana.jpg" width="300px">
+        <div class="card-body">
+          <h5 class="card-title"><b>Celana Panjang</b> </h5>
+        </div>
       </label>
-    </div>    <div class="card m-2">
+    </div>
+    <div class="card m-2">
       <label>
-          <input type="radio" name="emoji" id="emoji">
-          <img src="img/celana.jpg" width="300px">
-          <div class="card-body">
-            <h5 class="card-title"><b>Celana Panjang</b> </h5>
-          </div>
+        <input type="radio" name="emoji" id="emoji">
+        <img src="img/celana.jpg" width="300px">
+        <div class="card-body">
+          <h5 class="card-title"><b>Celana Panjang</b> </h5>
+        </div>
       </label>
-    </div>    <div class="card m-2">
+    </div>
+    <div class="card m-2">
       <label>
-          <input type="radio" name="emoji" id="emoji">
-          <img src="img/celana.jpg" width="300px">
-          <div class="card-body">
-            <h5 class="card-title"><b>Celana Panjang</b> </h5>
-          </div>
+        <input type="radio" name="emoji" id="emoji">
+        <img src="img/celana.jpg" width="300px">
+        <div class="card-body">
+          <h5 class="card-title"><b>Celana Panjang</b> </h5>
+        </div>
       </label>
-    </div>    <div class="card m-2">
+    </div>
+    <div class="card m-2">
       <label>
-          <input type="radio" name="emoji" id="emoji">
-          <img src="img/celana.jpg" width="300px">
-          <div class="card-body">
-            <h5 class="card-title"><b>Celana Panjang</b> </h5>
-          </div>
+        <input type="radio" name="emoji" id="emoji">
+        <img src="img/celana.jpg" width="300px">
+        <div class="card-body">
+          <h5 class="card-title"><b>Celana Panjang</b> </h5>
+        </div>
       </label>
     </div>
 
-</div>
+  </div>
 
-    <div class="d-flex justify-content-center m-4">
-      <button type="button" class="btn btn-success" style="width: 500px;">Pesan Sekarang</button>
-    </div>
-    
-  </form>
+  <div class="d-flex justify-content-center m-4">
+    <button type="button" class="btn btn-success" style="width: 500px;">Pesan Sekarang</button>
+  </div>
+
+</form>
 <!-- pesanan -->
 
 
 @endsection
 </body>
+
 </html>
