@@ -86,7 +86,7 @@
                                     <li class="list-group-item">
                                     <div class="d-flex">
                                         <img src="img/logo/star.png" style="width: 20px; height:20px;" alt="" class="m-1">
-                                        <p class="pt-1">4.5 | terjual 80+</p> 
+                                        <p class="pt-1">4.6 | terjual 80+</p> 
                                     </div> 
                                     </li>
                                 </ul>
@@ -133,7 +133,7 @@
                                     <li class="list-group-item">
                                     <div class="d-flex">
                                         <img src="img/logo/star.png" style="width: 20px; height:20px;" alt="" class="m-1">
-                                        <p class="pt-1">4.9 | terjual 150+</p> 
+                                        <p class="pt-1">4.5 | terjual 50+</p> 
                                     </div> 
                                     </li>
                                 </ul>
