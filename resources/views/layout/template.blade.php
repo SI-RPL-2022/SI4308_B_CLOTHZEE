@@ -21,7 +21,7 @@
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color : #A96B1E">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">BACA YA, INI KALIAN GANTI" LG AJA BELOM FIX CUMA NYOBA</a>
+    <a class="navbar-brand" href="#">LOGO</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -37,8 +37,12 @@
           <a class="nav-link" href="#"></a>
         </li>
       </ul>
-      <span class="navbar-text">
-        Navbar text with an inline element
+      <div class="input-group mb-2 me-5">
+        <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+        <button class="btn btn-secondary" type="button" id="button-addon2">Cari</button>
+      </div>
+      <span class="navbar-text me-5">
+        Navbar 
       </span>
     </div>
   </div>
