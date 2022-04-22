@@ -28,3 +28,7 @@ Route::get('/pemesanan', function () {
 Route::get('/pembayaran', function () {
     return view('pembayaran');
 });
+
+Route::get('/proses_pembayaran', function () {
+    return view('proses_pembayaran');
+});
