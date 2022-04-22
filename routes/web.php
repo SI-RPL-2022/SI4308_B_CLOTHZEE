@@ -32,3 +32,7 @@ Route::get('/pembayaran', function () {
 Route::get('/proses_pembayaran', function () {
     return view('proses_pembayaran');
 });
+
+Route::get('/review', function () {
+    return view('review');
+});
