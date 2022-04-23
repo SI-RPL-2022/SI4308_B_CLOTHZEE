@@ -4,10 +4,10 @@
 <!-- row atas -->
 <div class="row text-center mt-5">
 
-<p class="mb-1"><b>Selesaikan pembayaran dalam</b></p>
-<p class="mb-1">23.59 (countdown)</p>
-<p class="mb-1">Maksimal pembayaran </p>
-<p class="mb-1"><b>minggu, 10 april 2022 13.00</b></p>
+    <p class="mb-1"><b>Selesaikan pembayaran dalam</b></p>
+    <p class="mb-1">23.59 (countdown)</p>
+    <p class="mb-1">Maksimal pembayaran </p>
+    <p class="mb-1"><b>minggu, 10 april 2022 13.00</b></p>
 
 </div>
 <!-- row atas -->
@@ -51,10 +51,16 @@
 </div>
 
 <div class="rounded-3 shadow mt-4">
-    <div class="shadow-sm p-3">
+    <div class="shadow-sm p-4">
+        <form action="">
+              <div class="mb-4">
+            <label for="exampleInputEmail1" class="form-label"><b>Upload Bukti Pembayaran</b></label>
+            <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        </form>
         <div class="d-flex justify-content-between">
             <button type="submit" class="btn btn-outline-secondary" placeholder="Bayar Sekarang" style="width: 494px;">Cara Pembayaran</button>
-            <button type="submit" class="btn btn-success" placeholder="Bayar Sekarang" style="width: 494px; ">Sudah Bayar</button>
+            <button type="submit" class="btn btn-success" placeholder="Bayar Sekarang" style="width: 494px; ">Kirim Pembayaran</button>
         </div>
     </div>
 </div>
