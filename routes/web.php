@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,6 @@ Route::get('/detail_produk', function () {
     return view('detail_produk');
 });
 // Cuman buat push ke branch baru
+
+Route::get('/', [SearchController::class, 'searchMenu'])->name('searchMenu');
+Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
