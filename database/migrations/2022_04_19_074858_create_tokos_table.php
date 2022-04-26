@@ -15,12 +15,16 @@ return new class extends Migration
     {
         Schema::create('tokos', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('id_owner');
             $table->string('nama');
             $table->string('deskripsi')->nullable();
             $table->string('lokasi');
             $table->string('whatsapp')->nullable();
             $table->string('instagram')->nullable();
+            $table->string('foto_profil')->nullable();
             $table->timestamps();
+
+            $table->foreign("id_owner")->references('id')->on('penggunas')->onDelete("cascade");
         });
     }
 
