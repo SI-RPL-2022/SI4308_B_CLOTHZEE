@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('nama');
             $table->string('deskripsi')->nullable();
             $table->string('lokasi');
-            $table->string('urL_gmaps')->nullable();
+            $table->text('urL_gmaps')->nullable();
             $table->string('whatsapp')->nullable();
             $table->string('instagram')->nullable();
             $table->string('foto_profil')->nullable();

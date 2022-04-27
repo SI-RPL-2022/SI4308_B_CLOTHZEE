@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,24 +15,22 @@ use App\Http\Controllers\SearchController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/detail_produk', function () {
+//     return view('detail_produk');
+// });
 
-Route::get('/detail_produk', function () {
-    return view('detail_produk');
-});
+// Route::get('/pemesanan', function () {
+//     return view('pemesanan');
+// });
 
-Route::get('/pemesanan', function () {
-    return view('pemesanan');
-});
+// Route::get('/search', function () {
+//     return view('search');
+// });
+// Route::get('/', function () {
+//     return view('home');
+// });
 
-Route::get('/search', function () {
-    return view('search');
-});
-Route::get('/home', function () {
-    return view('home');
-});
-// Route::get('/', [SearchController::class, 'searchMenu'])->name('searchMenu');
+Route::get('/', [HomeController::class, 'index'])->name('index');
+
 // Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
 
