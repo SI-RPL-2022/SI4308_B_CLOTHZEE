@@ -28,3 +28,6 @@ Route::get('/pemesanan', function () {
 Route::get('/search', function () {
     return view('search');
 });
+Route::get('/home', function () {
+    return view('home');
+});
