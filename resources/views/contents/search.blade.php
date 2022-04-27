@@ -27,7 +27,7 @@
                         </li>
                     </ul>
                     <div class="card-body">
-                        <a href="detail_produk" class="card-link">Lihat detail</a>
+                        <a href="{{route('lihatToko', ['id' => $toko->id ])}}" class="card-link">Lihat detail</a>
                     </div>
                 </div>
             </div>
