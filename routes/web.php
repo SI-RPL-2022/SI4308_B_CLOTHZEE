@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,3 +32,6 @@ Route::get('/search', function () {
 Route::get('/home', function () {
     return view('home');
 });
+// Route::get('/', [SearchController::class, 'searchMenu'])->name('searchMenu');
+// Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
+
