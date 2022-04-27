@@ -65,19 +65,15 @@
       <p> Sejak tahun 2000 kami menggunakan para tukang jahit murah, mengawali dari kualitas biasa terus bertumbuh menambah peralatan mesin dan tukang-tukang hingga menemukan importir berkualitas untuk mendukung hasilkan jahitan kualitas tinggi.
         Sejak pandemi 2020 kami terus melakukan inovasi baru demi memberikan pelayanan yang baik kepada para pelanggan kami dengan bergabungnya kami ke tempat penjulanan konveksi terbaik di Indonesia yaitu Clothzee.
       </p>
-      <br>
       <p>Berbagai macam jenis pakaian sudah pasti dapat kami kerjakan dan sesuai dengan kualitas yang diinginkan oleh para pelanggan. Prioritas utama kami menjunjung kualitas pelayanan terhadap pelanggan yang menjadikan toko kami cukup terkenal di berbagai macam kalangan.</p>
-    </div>
 
-    <div class="mt-5">
-      <h4><b>Mengapa harus jahit di Ujang Tailor?</b> </h4>
-      <p style="text-align: left;" class="mt-4 mb-1"><b>Strategi Digital Marketing Online</b></p>
+
       <p style="text-align: justify;">Online sangat membantu kami menghadirkan pelanggan jauh lebih banyak kedalam bisnis kami sepanjang waktu. Seperti Anda sekarang yang bisa dengan mudah menemukan kami di halaman ini & bisa lanjut berkomunikasi online.</p>
 
-      <p style="text-align: left;" class="mt-4 mb-1"><b>Memiliki Produksi Sendiri</b></p>
+  
       <p style="text-align: justify;">Kami memiliki beberapa Rumah Produksi Sendiri dengan tukang- tukang yang ahli di bidangnya dari jahitan pria hingga wanita, dari jahitan konveksi kualitas plus hingga jahitan tailor kualitas tinggi. Karena itu, harga kami bisa lebih murah.</p>
 
-      <p style="text-align: left;" class="mt-4 mb-1"><b>Minimumnya Biaya Operasional</b></p>
+
       <p style="text-align: justify;">Kami fokus pada pilihan Kualitas, Harga, & Waktu. Biaya sewa tempat, karyawan dan layanan tambahan dipilih yang minimum. Alamat kami di area toko group bisnis dengan fasilitas & layanan minimalis. Karena itu, harga sangat murah.</p>
 
     </div>

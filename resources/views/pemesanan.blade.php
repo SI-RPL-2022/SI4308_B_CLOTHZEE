@@ -33,16 +33,13 @@
             <label for="jumlah_produk" class="mb-1">Jumlah</label>
             <div class="input-group mb-3" id="jumlah_produk">
                 <input type="number" class="form-control" placeholder="Jumlah produk yang diinginkan" aria-label="Recipient's username" aria-describedby="button-addon2" id="jumlah_produk">
-                <span class="input-group-text">Kodi</span>
+                <span class="input-group-text">Pcs</span>
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Desain</label>
                 <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Catatan</label>
-                <input type="text" class="form-control" placeholder="Isi sesuai permintaan anda" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
+
             <div class="mb-3">
                 <label for="radio" class="mb-1">Ukuran</label>
                 <div id="ukuran">
