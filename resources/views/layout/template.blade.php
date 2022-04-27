@@ -14,7 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>ClothZEE</title>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#"></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"></a>
@@ -41,9 +41,14 @@
         <input type="text" class="form-control" placeholder="Search" aria-label="Search">
         <button class="btn btn-secondary" type="button" id="button-addon2">Cari</button>
       </div>
-      <span class="navbar-text me-5">
-        Navbar 
-      </span>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Masuk</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Daftar</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
