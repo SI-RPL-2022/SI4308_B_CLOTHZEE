@@ -11,7 +11,7 @@ class toko extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'nama', 'deskripsi', 'lokasi', 'whatsapp', 'instagram', 'foto_profil', 'id_owner'
+        'nama', 'deskripsi', 'lokasi', 'whatsapp', 'instagram', 'foto_profil', 'id_owner', 'url_gmaps'
     ];
     public function produk(){
         return $this->hasMany(produk::class, 'id_toko');

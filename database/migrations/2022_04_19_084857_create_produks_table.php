@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('id_toko');
             $table->string('nama');
+            $table->string('foto_produk');
             $table->timestamps();
 
             $table->foreign("id_toko")->references('id')->on('tokos')->onDelete("cascade");
