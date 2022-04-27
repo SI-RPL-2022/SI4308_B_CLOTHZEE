@@ -164,7 +164,7 @@
 
                         <div class="col">
                             <div class="card shadow">
-                                <img src="https://img.freepik.com/free-vector/original-abstract-digital-painting-human-face-colorful-composition-contemporary-modern-art_88791-1082.jpg?w=2000" class="rounded-3" alt="p1" >
+                                <img src="https://media.istockphoto.com/vectors/sketch-of-continuous-human-face-on-colored-background-with-abstract-vector-id1203957125?k=20&m=1203957125&s=612x612&w=0&h=Vtd0fxDiSyeAJkWv0oQTGlGtZ4pILpruTRmZDQWEMRw=" class="rounded-3" alt="p1" >
                                 <div class="card-body">
                                     <h4 class="card-title" style="text-align: center;">Rumah Manusia</h4>
                                 </div>
