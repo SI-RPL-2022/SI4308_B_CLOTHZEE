@@ -21,7 +21,17 @@ Route::get('/', function () {
 Route::get('/detail_produk', function () {
     return view('detail_produk');
 });
-// Cuman buat push ke branch baru
 
-Route::get('/', [SearchController::class, 'searchMenu'])->name('searchMenu');
-Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
+Route::get('/pemesanan', function () {
+    return view('pemesanan');
+});
+
+Route::get('/search', function () {
+    return view('search');
+});
+Route::get('/home', function () {
+    return view('home');
+});
+// Route::get('/', [SearchController::class, 'searchMenu'])->name('searchMenu');
+// Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
+
