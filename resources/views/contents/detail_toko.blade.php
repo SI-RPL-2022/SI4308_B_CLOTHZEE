@@ -62,20 +62,9 @@
   <div class="col-7">
     <h3 class=" text-center mb-4"><b>Selamat Datang di Konfeksi {{$data_toko->nama}}</b></h3>
     <div style="text-align:justify;">
-      <p> Sejak tahun 2000 kami menggunakan para tukang jahit murah, mengawali dari kualitas biasa terus bertumbuh menambah peralatan mesin dan tukang-tukang hingga menemukan importir berkualitas untuk mendukung hasilkan jahitan kualitas tinggi.
-        Sejak pandemi 2020 kami terus melakukan inovasi baru demi memberikan pelayanan yang baik kepada para pelanggan kami dengan bergabungnya kami ke tempat penjulanan konveksi terbaik di Indonesia yaitu Clothzee.
-      </p>
-      <p>Berbagai macam jenis pakaian sudah pasti dapat kami kerjakan dan sesuai dengan kualitas yang diinginkan oleh para pelanggan. Prioritas utama kami menjunjung kualitas pelayanan terhadap pelanggan yang menjadikan toko kami cukup terkenal di berbagai macam kalangan.</p>
-
-
-      <p style="text-align: justify;">Online sangat membantu kami menghadirkan pelanggan jauh lebih banyak kedalam bisnis kami sepanjang waktu. Seperti Anda sekarang yang bisa dengan mudah menemukan kami di halaman ini & bisa lanjut berkomunikasi online.</p>
-
-  
-      <p style="text-align: justify;">Kami memiliki beberapa Rumah Produksi Sendiri dengan tukang- tukang yang ahli di bidangnya dari jahitan pria hingga wanita, dari jahitan konveksi kualitas plus hingga jahitan tailor kualitas tinggi. Karena itu, harga kami bisa lebih murah.</p>
-
-
-      <p style="text-align: justify;">Kami fokus pada pilihan Kualitas, Harga, & Waktu. Biaya sewa tempat, karyawan dan layanan tambahan dipilih yang minimum. Alamat kami di area toko group bisnis dengan fasilitas & layanan minimalis. Karena itu, harga sangat murah.</p>
-
+    @foreach($list_deskripsi as $deskripsi)
+      <p>{{$deskripsi}}</p>
+    @endforeach
     </div>
   </div>
 </div>
