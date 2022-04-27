@@ -31,6 +31,4 @@ use App\Http\Controllers\HomeController;
 // });
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
-
-// Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
-
+Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
