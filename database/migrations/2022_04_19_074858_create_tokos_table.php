@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('id_owner');
             $table->string('nama');
-            $table->string('deskripsi')->nullable();
+            $table->text('deskripsi');
             $table->string('lokasi');
             $table->text('urL_gmaps')->nullable();
             $table->string('whatsapp')->nullable();

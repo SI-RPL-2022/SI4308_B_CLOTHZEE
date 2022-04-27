@@ -102,7 +102,7 @@
   </div>
 
   <div class="d-flex justify-content-center m-4">
-    <button type="button" class="btn btn-success" style="width: 500px;">Pesan Sekarang</button>
+    <input type="submit" value="Pesan Sekarang" class="btn btn-success" style="width: 500px;">
   </div>
 
 </form>
