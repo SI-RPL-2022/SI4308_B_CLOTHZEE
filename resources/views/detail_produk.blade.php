@@ -12,13 +12,13 @@
     position: absolute;
   }
 
-  label>input+img {
+  label>input+div {
     /* style gambar */
     cursor: pointer;
     border: 2px solid transparent;
   }
 
-  label>input:checked+img {
+  label>input:checked+div {
     /* (RADIO CHECKED) style gambar */
     border: 2px solid #f00;
   }
@@ -52,10 +52,6 @@
         <img src="img/logo/whatsapp.png" style="width: 28px; height:28px;" alt="">
         <p> : 082219122468</p>
       </div>
-      <div class="d-flex justify-content-center">
-        <img src="img/logo/facebook.png" style="width: 28px; height:28px;" alt="">
-        <p> : Ujang_Tailor</p>
-      </div>
     </div>
     <div class="mt-4">
       <h5 class=" text-center mb-2"><b>Lokasi Kami</b> </h5>
@@ -66,164 +62,106 @@
   <div class="col-7">
     <h3 class=" text-center mb-4"><b>Selamat Datang di Konfeksi Ujang Tailor</b></h3>
     <div style="text-align:justify;">
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, porro voluptas! Quibusdam, possimus quisquam
-        maxime libero quis neque? Consectetur odio natus voluptatibus veritatis hic error expedita dolorem earum tempore cum.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quibusdam corporis perferendis modi excepturi,
-        deleniti nisi, eligendi unde rem necessitatibus, perspiciatis architecto beatae ad porro laborum dolor obcaecati
-        ullam! Possimus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem soluta, numquam tempore voluptatibus,
-        optio, voluptate ducimus molestiae sit possimus rem sunt incidunt totam? Quas deleniti, sapiente nulla obcaecati
-        accusamus voluptatem!</p>
+      <p> Sejak tahun 2000 kami menggunakan para tukang jahit murah, mengawali dari kualitas biasa terus bertumbuh menambah peralatan mesin dan tukang-tukang hingga menemukan importir berkualitas untuk mendukung hasilkan jahitan kualitas tinggi.
+        Sejak pandemi 2020 kami terus melakukan inovasi baru demi memberikan pelayanan yang baik kepada para pelanggan kami dengan bergabungnya kami ke tempat penjulanan konveksi terbaik di Indonesia yaitu Clothzee.
+      </p>
       <br>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quibusdam, autem eos dolore labore sint inventore nihil! Voluptatem totam, omnis assumenda, blanditiis quas explicabo rem autem nobis fugiat dolorum quod.</p>
+      <p>Berbagai macam jenis pakaian sudah pasti dapat kami kerjakan dan sesuai dengan kualitas yang diinginkan oleh para pelanggan. Prioritas utama kami menjunjung kualitas pelayanan terhadap pelanggan yang menjadikan toko kami cukup terkenal di berbagai macam kalangan.</p>
     </div>
 
     <div class="mt-5">
-      <h4 class="mb-2"><b>Produk yang dihasilkan</b> </h4>
-      <p>Pada konfeksi kami telah menghasilkan beberapa produk dan hasilnya tertera seperti dibawah ini </p>
-      <!-- card foto -->
+      <h4><b>Mengapa harus jahit di Ujang Tailor?</b> </h4>
+      <p style="text-align: left;" class="mt-4 mb-1"><b>Strategi Digital Marketing Online</b></p>
+      <p style="text-align: justify;">Online sangat membantu kami menghadirkan pelanggan jauh lebih banyak kedalam bisnis kami sepanjang waktu. Seperti Anda sekarang yang bisa dengan mudah menemukan kami di halaman ini & bisa lanjut berkomunikasi online.</p>
 
-      <!-- carousel -->
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <div class="card-group">
-              <div class="card m-2" style="width: 12rem;">
-                <img src="img/celana.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Celana bahan</h5>
-                </div>
-              </div>
-              <div class="card m-2" style="width: 10rem;">
-                <img src="img/batik.jpeg" style="width: 231px; height:233px;" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Kemeja</h5>
-                </div>
-              </div>
-              <div class="card m-2" style="width: 12rem;">
-                <img src="img/rok.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Rok</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <div class="card-group">
-              <div class="card m-2" style="width: 12rem;">
-                <img src="img/celana.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><b>Celana bahan</b></h5>
-                </div>
-              </div>
-              <div class="card m-2" style="width: 50px;">
-                <img src="img/batik.jpeg" style="width: 231px; height:233px;" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><b>Kemeja</b></h5>
-                </div>
-              </div>
-              <div class="card m-2" style="width: 12rem;">
-                <img src="img/rok.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title"><b>Rok</b></h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      <p style="text-align: left;" class="mt-4 mb-1"><b>Memiliki Produksi Sendiri</b></p>
+      <p style="text-align: justify;">Kami memiliki beberapa Rumah Produksi Sendiri dengan tukang- tukang yang ahli di bidangnya dari jahitan pria hingga wanita, dari jahitan konveksi kualitas plus hingga jahitan tailor kualitas tinggi. Karena itu, harga kami bisa lebih murah.</p>
+
+      <p style="text-align: left;" class="mt-4 mb-1"><b>Minimumnya Biaya Operasional</b></p>
+      <p style="text-align: justify;">Kami fokus pada pilihan Kualitas, Harga, & Waktu. Biaya sewa tempat, karyawan dan layanan tambahan dipilih yang minimum. Alamat kami di area toko group bisnis dengan fasilitas & layanan minimalis. Karena itu, harga sangat murah.</p>
+
     </div>
   </div>
 </div>
 <!-- row pertama -->
 
 <div class="pesan text-center mt-5 mb-2">
-  <h4><b>PEMESANAN PRODUK</b> </h4>
+  <h4><b>PEMESANAN PRODUK & PRODUK YANG DIHASILKAN</b> </h4>
 </div>
 <form>
   <div class="d-flex align-content-between flex-wrap text-center">
 
+    <label>
+      <input type="radio" name="emoji" id="emoji">
+      <div class="card shadow-lg m-2" style="width: 200px; height : 340px">
+        <img src="img/kaos.png" style="width: 155px;" class="card-img-top mt-4 mb-4 mx-auto" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Kaos Pria</b></h5>
+          <hr class="m-1">
+          <p class="card-text" style="font-size: 12px; text-align:justify;">Kualitas Kaos terbaik ditoko kami dan sudah terkenal dimanapun!</p>
+        </div>
+      </div>
+    </label>
 
-    <div class="card m-2">
-      <label>
-        <input type="radio" name="emoji" id="emoji">
-        <img src="img/celana.jpg" width="300px">
+    <label>
+      <input type="radio" name="emoji" id="emoji">
+      <div class="card shadow-lg m-2" style="width: 200px; height : 340px">
+        <img src="img/celana.png" style="width: 155px;" class="card-img-top mt-4 mb-4 mx-auto" alt="...">
         <div class="card-body">
-          <h5 class="card-title"><b>Celana Panjang</b> </h5>
+          <h5 class="card-title"><b>Celanan Wanita</b></h5>
+          <hr class="m-1">
+          <p class="card-text" style="font-size: 12px; text-align:justify;">Kualitas Celana Wanita terbaik ditoko kami dan sudah terkenal dimanapun!</p>
         </div>
-      </label>
-    </div>
-    <div class="card m-2">
-      <label>
-        <input type="radio" name="emoji" id="emoji">
-        <img src="img/celana.jpg" width="300px">
-        <div class="card-body">
-          <h5 class="card-title"><b>Celana Panjang</b> </h5>
-        </div>
-      </label>
-    </div>
-    <div class="card m-2">
-      <label>
-        <input type="radio" name="emoji" id="emoji">
-        <img src="img/celana.jpg" width="300px">
-        <div class="card-body">
-          <h5 class="card-title"><b>Celana Panjang</b> </h5>
-        </div>
-      </label>
-    </div>
-    <div class="card m-2">
-      <label>
-        <input type="radio" name="emoji" id="emoji">
-        <img src="img/celana.jpg" width="300px">
-        <div class="card-body">
-          <h5 class="card-title"><b>Celana Panjang</b> </h5>
-        </div>
-      </label>
-    </div>
-    <div class="card m-2">
-      <label>
-        <input type="radio" name="emoji" id="emoji">
-        <img src="img/celana.jpg" width="300px">
-        <div class="card-body">
-          <h5 class="card-title"><b>Celana Panjang</b> </h5>
-        </div>
-      </label>
-    </div>
-    <div class="card m-2">
-      <label>
-        <input type="radio" name="emoji" id="emoji">
-        <img src="img/celana.jpg" width="300px">
-        <div class="card-body">
-          <h5 class="card-title"><b>Celana Panjang</b> </h5>
-        </div>
-      </label>
-    </div>
-    <div class="card m-2">
-      <label>
-        <input type="radio" name="emoji" id="emoji">
-        <img src="img/celana.jpg" width="300px">
-        <div class="card-body">
-          <h5 class="card-title"><b>Celana Panjang</b> </h5>
-        </div>
-      </label>
-    </div>
-    <div class="card m-2">
-      <label>
-        <input type="radio" name="emoji" id="emoji">
-        <img src="img/celana.jpg" width="300px">
-        <div class="card-body">
-          <h5 class="card-title"><b>Celana Panjang</b> </h5>
-        </div>
-      </label>
-    </div>
+      </div>
+    </label>
 
+    <label>
+      <input type="radio" name="emoji" id="emoji">
+      <div class="card shadow-lg m-2" style="width: 200px; height : 340px">
+        <img src="img/kemeja.jpeg" style="width: 155px;" class="card-img-top mt-4 mb-4 mx-auto" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Kemeja Pria</b></h5>
+          <hr class="m-1">
+          <p class="card-text" style="font-size: 12px; text-align:justify;">Kualitas kemeja panjang kami terbaik ditoko kami dan sudah terkenal dimanapun!</p>
+        </div>
+      </div>
+    </label>
+
+    <label>
+      <input type="radio" name="emoji" id="emoji">
+      <div class="card shadow-lg m-2" style="width: 200px; height : 340px">
+        <img src="img/rok.jpg" style="width: 155px;" class="card-img-top mt-4 mb-4 mx-auto" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Rok Wanita</b></h5>
+          <hr class="m-1">
+          <p class="card-text" style="font-size: 12px; text-align:justify;">Kualitas Rok Wanita kami terbaik ditoko kami dan sudah terkenal dimanapun!</p>
+        </div>
+      </div>
+    </label>
+
+    <label>
+      <input type="radio" name="emoji" id="emoji">
+      <div class="card shadow-lg m-2" style="width: 200px; height : 340px">
+        <img src="img/jaket.png" style="width: 155px;" class="card-img-top mt-4 mb-4 mx-auto" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Jaket</b></h5>
+          <hr class="m-1">
+          <p class="card-text" style="font-size: 12px; text-align:justify;">Kualitas jaket di kami terbaik ditoko kami dan sudah terkenal dimanapun!</p>
+        </div>
+      </div>
+    </label>
+
+    <label>
+      <input type="radio" name="emoji" id="emoji">
+      <div class="card shadow-lg m-2" style="width: 200px; height : 340px">
+        <img src="img/kaos.png" style="width: 155px;" class="card-img-top mt-4 mb-4 mx-auto" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>Kaos Santai</b></h5>
+          <hr class="m-1">
+          <p class="card-text" style="font-size: 12px; text-align:justify;">Kualitas kaos santai kami terbaik ditoko kami dan sudah terkenal dimanapun!</p>
+        </div>
+      </div>
+    </label>
   </div>
 
   <div class="d-flex justify-content-center m-4">
@@ -231,8 +169,6 @@
   </div>
 
 </form>
-<!-- pesanan -->
-
 
 @endsection
 </body>
