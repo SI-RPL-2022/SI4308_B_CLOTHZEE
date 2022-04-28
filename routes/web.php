@@ -19,4 +19,5 @@ use App\Http\Controllers\TokoController;
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
 Route::get('/toko/{id}', [TokoController::class, 'lihatToko'])->name('lihatToko');
+Route::get('/pesan', [TokoController::class, 'pesanProduk'])->name('pesanProduk');
 

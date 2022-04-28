@@ -73,11 +73,11 @@
 <div class="pesan text-center mt-5 mb-2">
   <h4><b>PEMESANAN PRODUK & PRODUK YANG DIHASILKAN</b> </h4>
 </div>
-<form>
+<form action="{{route('pesanProduk')}}" method="GET">
   <div class="d-flex align-content-between flex-wrap text-center">
   @foreach($produk_toko as $produk)
     <label>
-      <input type="radio" name="emoji" id="emoji">
+      <input type="radio" name="id_produk" id="emoji" value="{{$produk->id}}">
       <div class="card shadow-lg m-2" style="width: 200px; height : 340px">
         <img src="{{url($produk->foto_produk)}}" style="width: 155px;" class="card-img-top mt-4 mb-4 mx-auto" alt="...">
         <div class="card-body">
@@ -89,7 +89,6 @@
     </label>
   @endforeach
   </div>
-
   <div class="d-flex justify-content-center m-4">
     <input type="submit" value="Pesan Sekarang" class="btn btn-success" style="width: 500px;">
   </div>

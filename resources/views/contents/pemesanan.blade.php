@@ -16,15 +16,9 @@
                 <label for="bahan" class="form-label">Bahan</label>
                 <select class="form-select" name="bahan" id="bahan" required>
                     <option selected disabled value="">Choose...</option>
-                    <option value="Nusantara Hall">Sutra</option>
-                    <option value="Garuda Hall" selected>Katun</option>
-                    <option value="Gedung Serba Guna">Wool</option>
-                    <option value="Gedung Serba Guna">Suede</option>
-                    <option value="Gedung Serba Guna">Sifon</option>
-                    <option value="Gedung Serba Guna">Rajut</option>
-                    <option value="Gedung Serba Guna">Polyester</option>
-                    <option value="Gedung Serba Guna">Organza</option>
-                    <option value="Gedung Serba Guna">Lycra</option>
+                    @foreach($daftar_bahan as $bahan)
+                    <option value="{{$bahan->id}}">{{$bahan->nama_bahan}}</option>
+                    @endforeach
                 </select>
                 <div class="invalid-feedback">
                     Pilih bahan yang anda inginkan!
@@ -35,32 +29,32 @@
                 <input type="number" class="form-control" placeholder="Jumlah produk yang diinginkan" aria-label="Recipient's username" aria-describedby="button-addon2" id="jumlah_produk">
                 <span class="input-group-text">Pcs</span>
             </div>
-            <div class="mb-3">
+            <!-- <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Desain</label>
                 <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
+            </div> -->
 
             <div class="mb-3">
                 <label for="radio" class="mb-1">Ukuran</label>
                 <div id="ukuran">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="small">
                         <label class="form-check-label" for="inlineRadio1">S</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="medium">
                         <label class="form-check-label" for="inlineRadio2">M</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="large">
                         <label class="form-check-label" for="inlineRadio2">L</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="extralarge">
                         <label class="form-check-label" for="inlineRadio2">XL</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="extraextralarge">
                         <label class="form-check-label" for="inlineRadio2">XXL</label>
                     </div>
                 </div>
@@ -92,43 +86,24 @@
             <thead>
                 <tr>
                     <th scope="col">Size</th>
-                    <th scope="col">S</th>
-                    <th scope="col">M</th>
-                    <th scope="col">L</th>
-                    <th scope="col">XL</th>
-                    <th scope="col">XXL</th>
+                    <th scope="col">Lingkar Dada</th>
+                    <th scope="col">Lingkar Pinggang</th>
+                    <th scope="col">Lingkar Panggul</th>
                 </tr>
             </thead>
             <tbody>
+                @foreach($daftar_ukuran as $ukuran)
                 <tr>
-                    <th scope="row">Lingkar Dada</th>
-                    <td>84</td>
-                    <td>88</td>
-                    <td>92</td>
-                    <td>96</td>
-                    <td>100</td>
+                    <th scope="row">{{ $ukuran->kategori }}</th>
+                    <td>{{ $ukuran->lingkar_dada }} cm</td>
+                    <td>{{ $ukuran->lingkar_pinggang }} cm</td>
+                    <td>{{ $ukuran->lingkar_panggul}} cm</td>
                 </tr>
-                <tr>
-                    <th scope="row">Lingkar Pinggang</th>
-                    <td>64</td>
-                    <td>68</td>
-                    <td>72</td>
-                    <td>76</td>
-                    <td>80</td>
-                </tr>
-                <tr>
-                    <th scope="row">Lingkar Panggul</th>
-                    <td>94</td>
-                    <td>98</td>
-                    <td>102</td>
-                    <td>106</td>
-                    <td>110</td>
-                </tr>
+                @endforeach
             </tbody>
         </table>
-
         <br>
-        <h5 class="text-center"><b>Ukuran Celana/Rok</b></h5>
+        <!-- <h5 class="text-center"><b>Ukuran Celana/Rok</b></h5>
         <table class="table">
             <thead>
                 <tr>
@@ -166,7 +141,7 @@
                     <td>88</td>
                 </tr>
             </tbody>
-        </table>
+        </table> -->
 
 
     </div>
