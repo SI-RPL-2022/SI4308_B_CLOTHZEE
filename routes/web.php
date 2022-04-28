@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +22,7 @@ Route::get('/', function () {
 Route::get('/detail_produk', function () {
     return view('detail_produk');
 });
-// Cuman buat push ke branch baru
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
