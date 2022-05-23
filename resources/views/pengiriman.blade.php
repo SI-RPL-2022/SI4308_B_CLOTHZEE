@@ -17,17 +17,18 @@
 
     label>input:checked+div {
         /* (RADIO CHECKED) style gambar */
-        border: 2px solid #f00;
+        background-color: #E8ECEE;
+        border-radius: 15px ;
     }
 </style>
 
 <div class="mt-4 text-center">
-    <h4><b>Checkout Pemesanan</b></h4>
+    <h4><b>Pengiriman</b></h4>
 </div>
 
 <div class="row mt-4">
-    <div class="col-7">
-        <div class="rounded-3 shadow">
+    <div class="col">
+        <div class="rounded-3 shadow w-75 mx-auto">
             <div class="shadow-sm p-3">
                 <h5 class="text-center"><B>Detail Pemesanan</B></h5>
             </div>
@@ -51,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div class="rounded-3 shadow mt-4">
+        <div class="rounded-3 shadow mt-3 w-75 mx-auto">
             <div class="shadow-sm p-3">
                 <h5 class="text-center"><B>Pengiriman</B></h5>
             </div>
@@ -79,21 +80,21 @@
                     </div>
                     <hr>
                     <p><b>Pilih Kurir</b></p>
-                    <label style="width: 670px;">
+                    <label class="w-100">
                         <input type="radio" name="emoji" id="emoji">
                         <div class="d-flex p-4">
                             <img src="img/logo/sicepat.png" class="rounded-3" alt="..." style="height: 20px;">
                             <p style="margin-left: 20px;">&ensp;&ensp;&nbsp;&nbsp;&ensp;Sicepat</p>
                         </div>
                     </label>
-                    <label style="width: 670px;">
+                    <label class="w-100">
                         <input type="radio" name="emoji" id="emoji">
                         <div class="d-flex p-4">
                             <img src="img/logo/jnt.jpg" class="rounded-3" alt="..." style="height: 20px;">
                             <p style="margin-left: 20px;">&nbsp;&ensp;J&T</p>
                         </div>
                     </label>
-                    <label style="width: 670px;">
+                    <label class="w-100">
                         <input type="radio" name="emoji" id="emoji">
                         <div class="d-flex p-4">
                             <img src="img/logo/jne.png" class="rounded-3" alt="..." style="height: 20px;">
@@ -101,56 +102,17 @@
                         </div>
                     </label>
 
-               
+                    
+                </div>
             </div>
-        </div>
-
+            
+            <div class="rounded-3 shadow mt-3 mb-5 w-75 mx-auto">
+                <div class="shadow-sm p-3 ">
+                    <button type="submit" class="btn btn-success mx-auto w-100" placeholder="Bayar Sekarang">Bayar Sekarang</button>
+                </div>
+            </div>
     </div>
-    <div class="col-5">
-        <div class="rounded-3 shadow">
-            <div class="shadow-sm p-3">
-                <h5 class="text-center"><B>Pembayaran</B></h5>
-            </div>
-            <div>
-                    <label style="width: 528px;">
-                        <input type="radio" name="emoji" id="emoji">
-                        <div class="d-flex p-4">
-                            <img src="img/logo/bca.png" class="rounded-3" alt="..." style="height: 20px;">
-                            <p style="margin-left: 20px;">&ensp;&ensp;&nbsp;BCA Virtual Account</p>
-                        </div>
-                    </label>
-
-                    <label style="width: 528px;">
-                        <input type="radio" name="emoji" id="emoji">
-                        <div class="d-flex p-4">
-                            <img src="img/logo/mandiri.png" class="rounded-3" alt="..." style="height: 20px;">
-                            <p style="margin-left: 20px;"> &ensp;&ensp;&ensp;Mandiri Virtual Account</p>
-                        </div>
-                    </label>
-
-                    <label style="width: 528px;">
-                        <input type="radio" name="emoji" id="emoji">
-                        <div class="d-flex p-4">
-                            <img src="img/logo/bni.png" class="rounded-3" alt="..." style="height: 20px;">
-                            <p style="margin-left: 20px;"> &ensp;&ensp;&nbsp;BNI Virtual Account</p>
-                        </div>
-                    </label>
-
-                    <label style="width: 528px;">
-                        <input type="radio" name="emoji" id="emoji">
-                        <div class="d-flex p-4">
-                            <img src="img/logo/bri.png" class="rounded-3" alt="..." style="height: 20px;">
-                            <p style="margin-left: 20px;">BRI Virtual Account</p>
-                        </div>
-                    </label>
-            </div>
-        </div>
-        <div class="rounded-3 shadow mt-4">
-            <div class="shadow-sm p-3">
-                <button type="submit" class="btn btn-success" placeholder="Bayar Sekarang" style="width: 494px;">Bayar Sekarang</button>
-            </div>
-        </div>
-
+    
         </form>
 
     </div>

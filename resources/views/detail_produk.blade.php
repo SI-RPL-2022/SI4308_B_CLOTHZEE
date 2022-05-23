@@ -20,7 +20,7 @@
 
   label>input:checked+div {
     /* (RADIO CHECKED) style gambar */
-    border: 2px solid #f00;
+    border: 2px solid #A96B1E;
   }
 </style>
 <br>

@@ -27,8 +27,8 @@ Route::get('/pemesanan', function () {
     return view('pemesanan');
 });
 
-Route::get('/pembayaran', function () {
-    return view('pembayaran');
+Route::get('/pengiriman', function () {
+    return view('pengiriman');
 });
 
 Route::get('/proses_pembayaran', function () {
@@ -47,6 +47,10 @@ Route::get('/', function () {
 
 Route::get('/edit_toko', function () {
     return view('edit_toko');
+});
+
+Route::get('/checkout', function () {
+    return view('checkout');
 });
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
