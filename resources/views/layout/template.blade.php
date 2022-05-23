@@ -21,7 +21,7 @@
 
 <body>
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color : #A96B1E">
+<!-- <nav class="navbar navbar-expand-lg navbar-dark" style="background-color : #A96B1E">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">LOGO</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,14 +43,14 @@
         <input type="text" class="form-control" placeholder="Search" aria-label="Search">
         <button class="btn btn-secondary" type="button" id="button-addon2">Cari</button>
       </div>
-      <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-center">
+      <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-center"> -->
         <!-- <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#">Masuk</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Daftar</a>
         </li> -->
-        <li class="nav-item me-1">
+        <!-- <li class="nav-item me-1">
           <img src="img/logo/akun.png" style="width: 24px;" alt="">
         </li>
         <li class="nav-item me-4">
@@ -63,7 +63,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ClothZEE</title>
-</head>
+</head> -->
 
 <body>
   <!-- navbar -->

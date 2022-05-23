@@ -15,35 +15,39 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-// Route::get('/detail_produk', function () {
-//     return view('detail_produk');
-// });
+Route::get('/detail_produk', function () {
+    return view('detail_produk');
+});
 
-// Route::get('/pemesanan', function () {
-//     return view('pemesanan');
-// });
+Route::get('/pemesanan', function () {
+    return view('pemesanan');
+});
 
-// Route::get('/pemesanan', function () {
-//     return view('pemesanan');
-// });
+Route::get('/pemesanan', function () {
+    return view('pemesanan');
+});
 
-// Route::get('/pembayaran', function () {
-//     return view('pembayaran');
-// });
+Route::get('/pembayaran', function () {
+    return view('pembayaran');
+});
 
-// Route::get('/proses_pembayaran', function () {
-//     return view('proses_pembayaran');
-// });
+Route::get('/proses_pembayaran', function () {
+    return view('proses_pembayaran');
+});
 
-// Route::get('/review', function () {
-//     return view('review');
-// });
-// Route::get('/search', function () {
-//     return view('search');
-// });
-// Route::get('/', function () {
-//     return view('home');
-// });
+Route::get('/review', function () {
+    return view('review');
+});
+Route::get('/search', function () {
+    return view('search');
+});
+Route::get('/', function () {
+    return view('home');
+});
+
+Route::get('/edit_toko', function () {
+    return view('edit_toko');
+});
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
