@@ -5,7 +5,6 @@
 <div class="row text-center mt-5">
 
     <p class="mb-1"><b>Selesaikan pembayaran dalam</b></p>
-    <p class="mb-1">23.59 (countdown)</p>
     <p class="mb-1">Maksimal pembayaran </p>
     <p class="mb-1"><b>minggu, 10 april 2022 13.00</b></p>
 

@@ -31,7 +31,7 @@
         <div>
             <img src="img/kemeja.jpeg" alt="" width="300" height="300">
         </div>
-
+ 
         <div class="mt-4">
             <h5><b>Rating</b></h5>
             <div class="d-flex justify-content-center">

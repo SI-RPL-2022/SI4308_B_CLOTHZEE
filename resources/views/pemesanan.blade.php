@@ -35,10 +35,6 @@
                 <input type="number" class="form-control" placeholder="Jumlah produk yang diinginkan" aria-label="Recipient's username" aria-describedby="button-addon2" id="jumlah_produk">
                 <span class="input-group-text">Pcs</span>
             </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Desain</label>
-                <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
 
             <div class="mb-3">
                 <label for="radio" class="mb-1">Ukuran</label>
@@ -65,18 +61,19 @@
                     </div>
                 </div>
             </div>
-            <fieldset disabled>
-                <label for="durasi" class="mb-1">Durasi</label>
-                <div class="input-group mb-3" id="durasi">
-                    <input type="number" class="form-control" placeholder="4" aria-label="Recipient's username" aria-describedby="button-addon2"">
-                    <span class=" input-group-text">Minggu</span>
+            <div class="mb-3">
+                <label for="durasi" class="form-label">Durasi</label>
+                <select class="form-select" name="durasi" id="durasi" required>
+                    <option value="Nusantara Hall" selected>1 Minggu</option>
+                    <option value="Garuda Hall" >2 Minggu</option>
+                    <option value="Gedung Serba Guna">4 Minggu</option>
+                    <option value="Gedung Serba Guna">6 Minggu</option>
+                    <option value="Gedung Serba Guna">8 Minggu</option>
+                </select>
+                <div class="invalid-feedback">
+                    Pilih bahan yang anda inginkan!
                 </div>
-                <label for="durasi" class="mb-1">Harga</label>
-                <div class="input-group mb-4" id="harga">
-                    <span class="input-group-text" id="basic-addon1">Rp.</span>
-                    <input type="text" class="form-control" placeholder="000,00" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-            </fieldset>
+            </div>
             <div class="d-flex justify-content-center">
                 <button type="button" class="btn btn-success" style="width: 500px;">Pesan Sekarang</button>
             </div>

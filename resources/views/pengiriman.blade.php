@@ -46,7 +46,7 @@
                         </div>
                         <div style="margin-left: 50px;">
                             <p style="margin-left: 10px; font-size: 15px;" class="mb-1"><b>Durasi : </b>4-6 Minggu</p>
-                            <p style="margin-left: 10px; font-size: 15px;" class="mb-1"><b>Total : </b>Rp.5.000.000,00</p>
+                            <p style="margin-left: 10px; font-size: 15px;" class="mb-1"><b>Berat : </b>10 KG</p>
                         </div>
                     </div>
                 </div>
