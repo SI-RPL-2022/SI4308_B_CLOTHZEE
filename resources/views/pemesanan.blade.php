@@ -28,7 +28,7 @@
                 </select>
                 <div class="invalid-feedback">
                     Pilih bahan yang anda inginkan!
-                </div>
+                </div> 
             </div>
             <label for="jumlah_produk" class="mb-1">Jumlah</label>
             <div class="input-group mb-3" id="jumlah_produk">

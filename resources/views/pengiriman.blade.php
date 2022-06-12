@@ -51,7 +51,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
         <div class="rounded-3 shadow mt-3 w-75 mx-auto">
             <div class="shadow-sm p-3">
                 <h5 class="text-center"><B>Pengiriman</B></h5>
