@@ -2,7 +2,6 @@
 @section('konten')
 
 <style type="text/css">
-    body {}
 
     label>input {
         /* Menyembunyikan radio button */
