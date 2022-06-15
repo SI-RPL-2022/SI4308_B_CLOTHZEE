@@ -36,6 +36,10 @@ Route::get('/home', function () {
 Route::get('/edit_produk', function () {
     return view('edit_produk');
 });
+
+Route::get('/resi', function () {
+    return view('resi');
+});
 // Route::get('/', [SearchController::class, 'searchMenu'])->name('searchMenu');
 // Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
 
