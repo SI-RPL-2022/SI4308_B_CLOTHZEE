@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\produk;
 use App\Models\pengguna;
+use App\models\cara_bayar;
+use App\models\jasa_pengiriman;
 
 class toko extends Model
 {
@@ -18,5 +20,11 @@ class toko extends Model
     }
     public function pengguna(){
         return $this->belongsTo(pengguna::class);
+    }
+    public function cara_bayar(){
+        return $this->belongsToMany(cara_bayar::class, 'cara_bayar_tokos', 'id_cara_bayar', 'id_toko');
+    }
+    public function jasa_pengiriman(){
+        return $this->belongsToMany(jasa_pengiriman::class, 'toko_jasa_pengirimen', 'id_toko', 'id_jasa_pengiriman');
     }
 }

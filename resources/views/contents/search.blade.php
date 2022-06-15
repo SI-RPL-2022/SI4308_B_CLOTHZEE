@@ -8,7 +8,7 @@
 <div class="container-fluid" style=" height: 900px; ">
     <div class="container-outline-secondary">
         <div class="row row-cols-md-4 g-4">
-            @foreach($list_toko as $toko)
+            @foreach($list_toko as $id => $toko)
             <div class="col">
                 <div class="card shadow">
                     <img src="{{ $toko->foto_profil }}" class="rounded-3" alt="p1">
@@ -16,7 +16,7 @@
                         <h4 class="card-title" style="text-align: center;">{{ $toko->nama}}</h4>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">{{ $toko->deskripsi}}</li>
+                        <li class="list-group-item">{{ $deskripsi_toko[$id]}}</li>
                         <!-- <li class="list-group-item">Jenis Kain : Jersey, Katun, dll</li> -->
                         <li class="list-group-item">Location : {{ $toko->lokasi}}</li>
                         <li class="list-group-item">
@@ -27,7 +27,7 @@
                         </li>
                     </ul>
                     <div class="card-body">
-                        <a href="detail_produk" class="card-link">Lihat detail</a>
+                        <a href="{{route('lihatToko', ['id' => $toko->id ])}}" class="card-link">Lihat detail</a>
                     </div>
                 </div>
             </div>
