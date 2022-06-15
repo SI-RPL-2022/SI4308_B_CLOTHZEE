@@ -22,7 +22,3 @@ Route::get('/', function () {
 Route::get('/detail_produk', function () {
     return view('detail_produk');
 });
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
