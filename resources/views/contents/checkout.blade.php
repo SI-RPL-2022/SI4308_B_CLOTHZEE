@@ -27,7 +27,6 @@
 <div class="mt-4 text-center">
     <h4><b>Checkout Pemesanan</b></h4>
 </div>
-
 <div class="row mt-4">
     <div class="col-7">
         <div class="rounded-3 shadow">
@@ -35,45 +34,45 @@
                 <h5 class="text-center"><B>Detail Pemesanan</B></h5>
             </div>
             <div class="p-4">
-                <p class="mb-1" style="font-size: 16px;"><b>Pemesanan di Ujang Tailor</b></p>
-                <p style="font-size: small;">Jakarta Utara</p>
+                <p class="mb-1" style="font-size: 16px;"><b>Pemesanan di {{$toko->nama}}</b></p>
+                <p style="font-size: small;">{{$toko->lokasi}}</p>
                 <div class="d-flex">
                     <img src="img/kemeja.jpeg" class="rounded-3" alt="..." style="width: 135px;">
                     <div class="d-flex">
 
                         <table class=" ms-4">
                             <tr>
-                                <td colspan="2">Kemeja lengan panjang</td>
+                                <td colspan="2">{{$data_pemesanan->nama_produk}}</td>
                             </tr>
                             <tr>
                                 <td>Bahan</td>
-                                <td>: Sutra</td>
+                                <td>: {{$data_pemesanan->bahan}}</td>
                             </tr>
                             <tr>
                                 <td>Ukuran</td>
-                                <td>: L</td>
+                                <td>: {{$data_pemesanan->inlineRadioOptions}}</td>
                             </tr>
                             <tr>
-                                <td colspan="2">100 pcs</td>
+                                <td colspan="2">{{$data_pemesanan->jumlah_produk}} pcs</td>
                             </tr>
                         </table>
 
                         <table class=" ms-5">
                             <tr>
                                 <td><b>Durasi</b></td>
-                                <td>: 4-6 Minggu</td>
+                                <td>: {{$data_pemesanan->durasi}}</td>
                             </tr>
                             <tr>
                                 <td><b>Harga Pemesanan</b></td>
-                                <td>: Rp.5.000.000</td>
+                                <td>: Rp.{{$total_biaya - 100000}}</td>
                             </tr>
                             <tr>
                                 <td><b>Harga Ongkir</b></td>
-                                <td>: Rp.100.000</td>
+                                <td>: Rp.100000</td>
                             </tr>
                             <tr>
                                 <td><b>Total</b></td>
-                                <td>: Rp.5.100.000</td>
+                                <td>: Rp.{{$total_biaya}}</td>
                             </tr>
                         </table>
 
@@ -86,27 +85,29 @@
                 <h5 class="text-center"><B>Pengiriman</B></h5>
             </div>
             <div class="p-4">
-                <form>
-                    
+                <form action="{{route('prosesPembayaran')}}" method="POST">
+                    @csrf
+                    <input type="hidden" name="id_produk" value="{{$data_pemesanan->id_produk}}">
+                    <input type="hidden" name="total_biaya" value="{{$total_biaya}}">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Nama Penerima</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="Danang" readonly>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$data_pemesanan->nama_penerima}}" readonly>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Nomor Hp</label>
-                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="082222222222" readonly>
+                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$data_pemesanan->no_hp}}" readonly>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Alamat Lengkap</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="cipinang " readonly>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$data_pemesanan->alamat}}" readonly>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Kota & Kecamatan</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="Garut, karangpawitan " readonly>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$data_pemesanan->kotakecamatan}}" readonly>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Kode Pos</label>
-                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="44182" readonly>
+                        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$data_pemesanan->kode_pos}}" readonly>
                     </div>
                     <hr>
                     <p><b>Pilih Kurir</b></p>

@@ -9,7 +9,4 @@ use App\Models\ukuran;
 class harga extends Model
 {
     use HasFactory;
-    public function ukuran(){
-        return $this->belongsTo(ukuran::class);
-    }
 }

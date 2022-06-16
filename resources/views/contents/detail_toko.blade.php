@@ -60,7 +60,7 @@
   </div>
 
   <div class="col-7">
-    <h3 class=" text-center mb-4"><b>Selamat Datang di Konfeksi {{$data_toko->nama}}</b></h3>
+    <h3 class=" text-center mb-4"><b>Selamat Datang di {{$data_toko->nama}}</b></h3>
     <div style="text-align:justify;">
     @foreach($list_deskripsi as $deskripsi)
       <p>{{$deskripsi}}</p>
@@ -74,9 +74,11 @@
   <h4><b>PEMESANAN PRODUK & PRODUK YANG DIHASILKAN</b> </h4>
 </div>
 <form action="{{route('pesanProduk')}}" method="GET">
+  <input type="text" name="nama_toko" value="{{$data_toko->nama}}" id="" hidden>
   <div class="d-flex align-content-between flex-wrap text-center">
   @foreach($produk_toko as $produk)
     <label>
+      <input type="radio" name="id_produk" id="emoji" value="{{$produk->id}}">
       <input type="radio" name="id_produk" id="emoji" value="{{$produk->id}}">
       <div class="card shadow-lg m-2" style="width: 200px; height : 340px">
         <img src="{{url($produk->foto_produk)}}" style="width: 155px;" class="card-img-top mt-4 mb-4 mx-auto" alt="...">

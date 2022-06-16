@@ -16,10 +16,12 @@ return new class extends Migration
         Schema::create('hargas', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_ukuran');
+            $table->unsignedBigInteger('id_bahan');
             $table->integer('harga');
             $table->timestamps();
 
             $table->foreign("id_ukuran")->references('id')->on('ukurans')->onDelete("cascade");
+            $table->foreign("id_bahan")->references('id')->on('bahans')->onDelete("cascade");
 
         });
     }

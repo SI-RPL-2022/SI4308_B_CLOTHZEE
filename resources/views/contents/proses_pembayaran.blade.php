@@ -11,7 +11,7 @@
 </div>
 <!-- row atas -->
 
-<!-- row bawah --> 
+<!-- row bawah -->
 <div class="row mt-4">
     <div class="col">
         <div class="rounded-3 shadow">
@@ -38,7 +38,7 @@
                 <div class="d-flex">
                     <div>
                         <p style="margin-left: 26px; font-size: 13px;" class="mb-1">Total Pembayaran</p>
-                        <p style="margin-left: 26px; font-size: 15px;" class="mb-3"><b>Rp.5.000.000,00</b></p>
+                        <p style="margin-left: 26px; font-size: 15px;" class="mb-3"><b>Rp.{{$data_pemesanan->total_biaya}}</b></p>
                     </div>
                     <div>
                         <p style="margin-left: 935px;" class="mt-2"><b>Detail Pembayaran</b></p>
@@ -51,16 +51,17 @@
 
 <div class="rounded-3 shadow mt-4">
     <div class="shadow-sm p-4">
-        <form action="">
-              <div class="mb-4">
-            <label for="exampleInputEmail1" class="form-label"><b>Upload Bukti Pembayaran</b></label>
-            <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        </div>
+        <form action="{{route('uploadBukti')}}" method="POST" enctype="multipart/form-data">
+            @csrf
+            <div class="mb-4">
+                <label for="exampleInputEmail1" class="form-label"><b>Upload Bukti Pembayaran</b></label>
+                <input type="file" name="image" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-outline-secondary" placeholder="Bayar Sekarang" style="width: 494px;">Cara Pembayaran</button>
+                <input type="submit" class="btn btn-success" placeholder="Bayar Sekarang" style="width: 494px; " value="Kirim Bukti">
+            </div>
         </form>
-        <div class="d-flex justify-content-between">
-            <button type="submit" class="btn btn-outline-secondary" placeholder="Bayar Sekarang" style="width: 494px;">Cara Pembayaran</button>
-            <button type="submit" class="btn btn-success" placeholder="Bayar Sekarang" style="width: 494px; ">Kirim Pembayaran</button>
-        </div>
     </div>
 </div>
 <!-- row bawah -->

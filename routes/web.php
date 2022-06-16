@@ -24,10 +24,6 @@ use App\Http\Controllers\TokoController;
 //     return view('pemesanan');
 // });
 
-// Route::get('/pemesanan', function () {
-//     return view('pemesanan');
-// });
-
 // Route::get('/pengiriman', function () {
 //     return view('pengiriman');
 // });
@@ -58,4 +54,7 @@ Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
 Route::get('/toko/{id}', [TokoController::class, 'lihatToko'])->name('lihatToko');
 Route::get('/pesan', [TokoController::class, 'pesanProduk'])->name('pesanProduk');
-
+Route::post('/beli', [TokoController::class, 'beliProduk'])->name('beliProduk');
+Route::post('/checkout', [TokoController::class, 'checkoutProduk'])->name('checkoutProduk');
+Route::post('/prosesPembayaran', [TokoController::class, 'prosesPembayaran'])->name('prosesPembayaran');
+Route::post('/uploadBukti', [TokoController::class, 'uploadBukti'])->name('uploadBukti');
