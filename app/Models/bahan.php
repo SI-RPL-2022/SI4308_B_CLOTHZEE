@@ -12,4 +12,7 @@ class bahan extends Model
     public function produk(){
         return $this-> belongsTo(produk::class);
     }
+    public function harga(){
+        return $this->belongsToMany(harga::class, 'id_bahan');
+    }
 }

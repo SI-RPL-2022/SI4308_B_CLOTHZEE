@@ -14,6 +14,6 @@ class ukuran extends Model
         return $this-> belongsTo(produk::class);
     }
     public function harga(){
-        return $this->hasOne(harga::class, 'id_ukuran');
+        return $this->belongsToMany(harga::class, 'id_ukuran');
     }
 }
