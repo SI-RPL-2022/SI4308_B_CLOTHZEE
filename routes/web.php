@@ -33,9 +33,6 @@ use App\Http\Controllers\LoginController;
 //     return view('proses_pembayaran');
 // });
 
-// Route::get('/review', function () {
-//     return view('review');
-// });
 // Route::get('/search', function () {
 //     return view('search');
 // });
@@ -67,4 +64,3 @@ Route::post('/beli', [TokoController::class, 'beliProduk'])->name('beliProduk');
 Route::post('/checkout', [TokoController::class, 'checkoutProduk'])->name('checkoutProduk');
 Route::post('/prosesPembayaran', [TokoController::class, 'prosesPembayaran'])->name('prosesPembayaran');
 Route::post('/uploadBukti', [TokoController::class, 'uploadBukti'])->name('uploadBukti');
-// Route::post('/reviewToko', [TokoController::class, 'reviewToko'])->name('reviewToko');
