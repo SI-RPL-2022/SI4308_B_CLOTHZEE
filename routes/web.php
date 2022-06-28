@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TokoController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,9 +53,18 @@ use App\Http\Controllers\TokoController;
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
+
+Route::get('/login', [LoginController::class, 'loginPage'])->name('loginPage');
+Route::post('/login', [LoginController::class, 'login'])->name('login');
+Route::get('/register', [LoginController::class, 'registerPage'])->name('registerPage');
+Route::post('/register', [LoginController::class, 'register'])->name('register');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+
+
 Route::get('/toko/{id}', [TokoController::class, 'lihatToko'])->name('lihatToko');
 Route::get('/pesan', [TokoController::class, 'pesanProduk'])->name('pesanProduk');
 Route::post('/beli', [TokoController::class, 'beliProduk'])->name('beliProduk');
 Route::post('/checkout', [TokoController::class, 'checkoutProduk'])->name('checkoutProduk');
 Route::post('/prosesPembayaran', [TokoController::class, 'prosesPembayaran'])->name('prosesPembayaran');
 Route::post('/uploadBukti', [TokoController::class, 'uploadBukti'])->name('uploadBukti');
+// Route::post('/reviewToko', [TokoController::class, 'reviewToko'])->name('reviewToko');

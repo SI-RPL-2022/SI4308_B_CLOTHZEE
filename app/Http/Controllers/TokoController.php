@@ -65,4 +65,7 @@ class TokoController extends Controller
         }
         return redirect()->route('index');
     }
+    // public function reviewToko(Request $request){
+    //     return view('contents.review')
+    // }
 }

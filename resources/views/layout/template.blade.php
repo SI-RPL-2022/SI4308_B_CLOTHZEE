@@ -13,10 +13,10 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ClothZEE</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClothZEE</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
   <form action="{{route('searchToko')}}" method="GET">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color : #A96B1E">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">LOGO</a>
+        <img src="img/11.png" alt="" width="5%">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,36 +41,31 @@
             </li>
           </ul>
           <div class="input-group mb-2 me-5">
-          @php
+            @php
             if (!isset($keyword)){
-              $keyword = "";
+            $keyword = "";
             };
-          @endphp
-            <input type="text" class="form-control" value = "{{ $keyword }}" placeholder="Search" aria-label="Search" name="keyword">
+            @endphp
+            <input type="text" class="form-control" value="{{ $keyword }}" placeholder="Search" aria-label="Search" name="keyword">
             <input type="submit" value="Cari" class="btn btn-secondary" id="button-addon2">
           </div>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            @if(isset($username) && strlen($username) > 0)
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Masuk</a>
+              <a href="#" class="nav-link active">{{$username}}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Daftar</a>
+              <a class="nav-link" href="{{route('logout')}}">Keluar</a>
             </li>
+            @else
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="{{route('loginPage')}}">Masuk</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{route('registerPage')}}">Daftar</a>
+            </li>
+            @endif
           </ul>
-          <!-- <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Masuk</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Daftar</a>
-            </li>
-            <li class="nav-item me-1">
-              <img src="img/logo/akun.png" style="width: 24px;" alt="">
-            </li>
-            <li class="nav-item me-4">
-              <p style="color: white;">Iqbal</p>
-            </li>
-          </ul> -->
         </div>
       </div>
     </nav>
