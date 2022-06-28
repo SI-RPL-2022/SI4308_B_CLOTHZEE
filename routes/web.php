@@ -29,6 +29,24 @@ use App\Http\Controllers\LoginController;
 //     return view('pengiriman');
 // });
 
+
+// Route::get('/search', function () {
+//    return view('search');
+// });
+// Route::get('/home', function () {
+//    return view('home');
+// });
+
+// Route::get('/edit_produk', function () {
+//    return view('edit_produk');
+// });
+
+// Route::get('/resi', function () {
+//    return view('resi');
+//});
+// Route::get('/', [SearchController::class, 'searchMenu'])->name('searchMenu');
+// Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
+
 // Route::get('/proses_pembayaran', function () {
 //     return view('proses_pembayaran');
 // });
