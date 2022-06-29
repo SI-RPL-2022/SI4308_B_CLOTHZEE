@@ -4,13 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\toko;
+use App\Models\ukuran;
 
-class pengguna extends Model
+class harga extends Model
 {
     use HasFactory;
-
-    public function toko(){
-        return $this->hasOne(toko::class, 'id_owner');
-    }
 }

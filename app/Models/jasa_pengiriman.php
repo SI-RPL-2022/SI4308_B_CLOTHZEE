@@ -6,11 +6,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\toko;
 
-class pengguna extends Model
+class jasa_pengiriman extends Model
 {
     use HasFactory;
-
     public function toko(){
-        return $this->hasOne(toko::class, 'id_owner');
+        return $this->belongsToMany(toko::class, 'toko_jasa_pengirimen', 'id_jasa_pengiriman', 'id_toko');
     }
 }
