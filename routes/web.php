@@ -17,54 +17,18 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-// Route::get('/detail_produk', function () {
-//     return view('detail_produk');
-// });
-
-// Route::get('/pemesanan', function () {
-//     return view('pemesanan');
-// });
-
-// Route::get('/pengiriman', function () {
-//     return view('pengiriman');
-// });
-
-
-// Route::get('/search', function () {
-//    return view('search');
-// });
-// Route::get('/home', function () {
-//    return view('home');
-// });
-
 // Route::get('/edit_produk', function () {
 //    return view('edit_produk');
 // });
 
 // Route::get('/resi', function () {
 //    return view('resi');
-//});
-// Route::get('/', [SearchController::class, 'searchMenu'])->name('searchMenu');
-// Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
-
-// Route::get('/proses_pembayaran', function () {
-//     return view('proses_pembayaran');
-// });
-
-// Route::get('/search', function () {
-//     return view('search');
-// });
-// Route::get('/', function () {
-//     return view('home');
 // });
 
 // Route::get('/edit_toko', function () {
 //     return view('edit_toko');
 // });
 
-// Route::get('/checkout', function () {
-//     return view('checkout');
-// });
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
@@ -82,3 +46,7 @@ Route::post('/beli', [TokoController::class, 'beliProduk'])->name('beliProduk');
 Route::post('/checkout', [TokoController::class, 'checkoutProduk'])->name('checkoutProduk');
 Route::post('/prosesPembayaran', [TokoController::class, 'prosesPembayaran'])->name('prosesPembayaran');
 Route::post('/uploadBukti', [TokoController::class, 'uploadBukti'])->name('uploadBukti');
+
+Route::get('/seller', [TokoController::class, 'sellerIndex'])->name('sellerIndex');
+Route::get('/seller/edit', [TokoController::class, 'editToko'])->name('editToko');
+Route::post('/seller/edit', [TokoController::class, 'updateToko'])->name('updateToko');

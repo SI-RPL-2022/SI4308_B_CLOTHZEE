@@ -15,7 +15,11 @@ class LoginController extends Controller
         if ($result->first()){
             // dd($result->first()->nama);
             $request->session()->put('username', $result->first()->nama);
-            return redirect()->route('index');
+            if ($result->first()->role == "seller"){
+                return redirect()->route('sellerIndex');
+            } else{
+                return redirect()->route('index');
+            }
         } else{
             return redirect()->route("loginPage");
         };

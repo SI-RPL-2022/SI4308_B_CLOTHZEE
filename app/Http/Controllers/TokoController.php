@@ -8,7 +8,7 @@ use App\Models\produk;
 use App\Models\bahan;
 use App\Models\ukuran;
 use App\Models\harga;
-use Illuminate\Support\Facades\Redis;
+use App\Models\pengguna;
 
 class TokoController extends Controller
 {
@@ -65,7 +65,40 @@ class TokoController extends Controller
         }
         return redirect()->route('index');
     }
-    // public function reviewToko(Request $request){
-    //     return view('contents.review')
-    // }
+    public function sellerIndex(Request $request){
+        $username = $request->session()->get('username');
+        $data_user = pengguna::where('nama', $username)->first();
+        $id_user = $data_user->id;
+        $data_toko = toko::where('id_owner', $id_user)->first();
+        $daftar_produk = produk::where('id_toko', $data_toko->id)->get();
+        return view('contents.seller', ['username' => $username, 'data_toko' => $data_toko, 'daftar_produk' => $daftar_produk]);
+    }
+    public function editToko(Request $request){
+        $username = $request->session()->get('username');
+        $data_user = pengguna::where('nama', $username)->first();
+        $id_user = $data_user->id;
+        $data_toko = toko::where('id_owner', $id_user)->first();
+        return view('contents.edit_toko', ['username' => $username,'data_toko' => $data_toko]);
+    }
+
+    public function updateToko(Request $request){
+        $toko = toko::find($request->id_toko);
+        if($request->filled('nama_toko')){
+            $toko->nama = $request->nama_toko;
+        }
+        if($request->filled('instagram')){
+            $toko->instagram = $request->instagram;
+        }
+        if($request->filled('whatsapp')){
+            $toko->whatsapp = $request->whatsapp;
+        }
+        if($request->filled('url_gmaps')){
+            $toko->urL_gmaps = $request->url_gmaps;
+        }
+        if($request->filled('deskripsi_toko')){
+            $toko->deskripsi = $request->deskripsi_toko;
+        }
+        $toko->save();
+        return redirect()->route("sellerIndex");
+    }
 }
