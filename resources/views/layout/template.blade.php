@@ -24,7 +24,7 @@
   <form action="{{route('searchToko')}}" method="GET">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color : #A96B1E">
       <div class="container-fluid">
-        <img src="img/11.png" alt="" width="5%">
+        <img src={{url('/img/11.png')}} alt="" width="5%">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

@@ -45,7 +45,11 @@
         <div class="card-body">
             <h5 class="card-title">{{ $produk->nama }}</h5>
             <p class="card-text">{{ $produk->deskripsi }}</p>
-            <a href="#" class="btn btn-primary">Edit Data Produk</a>
+            <form action="{{route('editProduct')}}" method="POST">
+                @csrf
+                <input type="number" name="id_produk" id="" value="{{ $produk->id }}" hidden>
+                <input type="submit" value="Edit Data Produk" class="btn btn-primary">
+            </form>
         </div>
     </div>
     @endforeach

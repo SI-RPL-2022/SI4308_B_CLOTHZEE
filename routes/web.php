@@ -25,10 +25,6 @@ use App\Http\Controllers\LoginController;
 //    return view('resi');
 // });
 
-// Route::get('/edit_toko', function () {
-//     return view('edit_toko');
-// });
-
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/search', [SearchController::class, 'searchToko'])->name('searchToko');
@@ -50,3 +46,6 @@ Route::post('/uploadBukti', [TokoController::class, 'uploadBukti'])->name('uploa
 Route::get('/seller', [TokoController::class, 'sellerIndex'])->name('sellerIndex');
 Route::get('/seller/edit', [TokoController::class, 'editToko'])->name('editToko');
 Route::post('/seller/edit', [TokoController::class, 'updateToko'])->name('updateToko');
+
+Route::post('/seller/product/edit', [TokoController::class, 'editProduct'])->name('editProduct');
+Route::post('/seller/product/update', [TokoController::class, 'updateProduct'])->name('updateProduct');

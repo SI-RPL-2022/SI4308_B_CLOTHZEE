@@ -57,15 +57,16 @@ class TokoController extends Controller
         return view('contents.proses_pembayaran', ['data_pemesanan' => $request]);
     }
     public function uploadBukti(Request $request)
-    {	
-        if($request->file('image')){
-            $file= $request->file('image');
-            $filename= date('YmdHi').$file->getClientOriginalName();
-            $file-> move(public_path('bukti_pembayaran'), $filename);
+    {
+        if ($request->file('image')) {
+            $file = $request->file('image');
+            $filename = date('YmdHi') . $file->getClientOriginalName();
+            $file->move(public_path('bukti_pembayaran'), $filename);
         }
         return redirect()->route('index');
     }
-    public function sellerIndex(Request $request){
+    public function sellerIndex(Request $request)
+    {
         $username = $request->session()->get('username');
         $data_user = pengguna::where('nama', $username)->first();
         $id_user = $data_user->id;
@@ -73,32 +74,53 @@ class TokoController extends Controller
         $daftar_produk = produk::where('id_toko', $data_toko->id)->get();
         return view('contents.seller', ['username' => $username, 'data_toko' => $data_toko, 'daftar_produk' => $daftar_produk]);
     }
-    public function editToko(Request $request){
+    public function editToko(Request $request)
+    {
         $username = $request->session()->get('username');
         $data_user = pengguna::where('nama', $username)->first();
         $id_user = $data_user->id;
         $data_toko = toko::where('id_owner', $id_user)->first();
-        return view('contents.edit_toko', ['username' => $username,'data_toko' => $data_toko]);
+        return view('contents.edit_toko', ['username' => $username, 'data_toko' => $data_toko]);
     }
 
-    public function updateToko(Request $request){
+    public function updateToko(Request $request)
+    {
         $toko = toko::find($request->id_toko);
-        if($request->filled('nama_toko')){
+        if ($request->filled('nama_toko')) {
             $toko->nama = $request->nama_toko;
         }
-        if($request->filled('instagram')){
+        if ($request->filled('instagram')) {
             $toko->instagram = $request->instagram;
         }
-        if($request->filled('whatsapp')){
+        if ($request->filled('whatsapp')) {
             $toko->whatsapp = $request->whatsapp;
         }
-        if($request->filled('url_gmaps')){
+        if ($request->filled('url_gmaps')) {
             $toko->urL_gmaps = $request->url_gmaps;
         }
-        if($request->filled('deskripsi_toko')){
+        if ($request->filled('deskripsi_toko')) {
             $toko->deskripsi = $request->deskripsi_toko;
         }
         $toko->save();
+        return redirect()->route("sellerIndex");
+    }
+
+    public function editProduct(Request $request)
+    {
+        $username = $request->session()->get('username');
+        $data_produk = produk::find($request->id_produk);
+        return view('contents.edit_produk', ['username' => $username, 'data_produk' => $data_produk]);
+    }
+    public function updateProduct(Request $request)
+    {
+        $produk = produk::find($request->id_produk);
+        if ($request->filled('nama_produk')) {
+            $produk->nama = $request->nama_produk;
+        }
+        if ($request->filled('deskripsi')) {
+            $produk->deskripsi = $request->deskripsi;
+        }
+        $produk->save();
         return redirect()->route("sellerIndex");
     }
 }
