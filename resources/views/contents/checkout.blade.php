@@ -182,7 +182,7 @@
                 <button type="submit" class="btn btn-success" placeholder="Bayar Sekarang" style="width: 494px;">Bayar Sekarang</button>
             </div>
         </div>
-
+ 
         </form>
 
     </div>
