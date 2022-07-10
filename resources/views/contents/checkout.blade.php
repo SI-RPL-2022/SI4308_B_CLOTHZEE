@@ -145,7 +145,7 @@
             </div>
             <div>
                 <label style="width: 528px;">
-                    <input type="radio" name="emoji" id="emoji">
+                    <input type="radio" name="pembayaran" id="pembayaran" value="bca">
                     <div class="d-flex p-4">
                         <img src="img/logo/bca.png" class="rounded-3" alt="..." style="height: 20px;">
                         <p style="margin-left: 20px;">&ensp;&ensp;&nbsp;BCA Virtual Account</p>

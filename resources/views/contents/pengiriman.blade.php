@@ -90,9 +90,12 @@
                         <input type="number" name="kode_pos" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <hr>
+                    <div class="shadow-sm p-3 ">
+                <input type="submit" value="Bayar" class="btn btn-success mx-auto w-100">
+            </div>
                     <p><b>Pilih Kurir</b></p>
                     <label class="w-100">
-                        <input type="radio" name="emoji" id="emoji">
+                        <input type="radio" name="emoji" id="emoji" value="sicepat">
                         <div class="d-flex p-4">
                             <img src="img/logo/sicepat.png" class="rounded-3" alt="..." style="height: 20px;">
                             <p style="margin-left: 20px;">&ensp;&ensp;&nbsp;&nbsp;&ensp;Sicepat</p>
@@ -112,6 +115,7 @@
                             <p style="margin-left: 20px;">&ensp;&ensp;&nbsp;&ensp;&nbsp;&ensp;JNE</p>
                         </div>
                     </label>
+                    
 
 
             </div>
@@ -119,7 +123,7 @@
 
         <div class="rounded-3 shadow mt-3 mb-5 w-75 mx-auto">
             <div class="shadow-sm p-3 ">
-                <button type="submit" class="btn btn-success mx-auto w-100" placeholder="Bayar Sekarang">Bayar Sekarang</button>
+                <input type="submit" value="Bayar" class="btn btn-success mx-auto w-100">
             </div>
         </div>
     </div>

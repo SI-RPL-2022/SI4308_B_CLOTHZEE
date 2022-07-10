@@ -6,17 +6,17 @@
     text-align: center;
   }
 
-  label>input {
+  /* label>input { */
     /* Menyembunyikan radio button */
-    visibility: hidden;
-    position: absolute;
-  }
+    /* visibility: hidden; */
+    /* position: absolute; */
+  /* } */
 
-  label>input+div {
-    /* style gambar */
-    cursor: pointer;
-    border: 2px solid transparent;
-  }
+  /* label>input+div { */
+
+    /* cursor: pointer; */
+    /* border: 2px solid transparent; */
+  /* } */
 
   label>input:checked+div {
     /* (RADIO CHECKED) style gambar */
@@ -32,6 +32,7 @@
       <img src="{{ url($data_toko->foto_profil) }}" alt="" width="300" height="300">
     </div>
 
+
     <div class="mt-4">
       <h5><b>Rating</b></h5>
       <div class="d-flex justify-content-center">
@@ -42,6 +43,33 @@
         <img src={{ url('/img/logo/star.png') }} style="width: 24px; height:24px;" alt="" class="m-1">
       </div>
     </div>
+
+<form action="{{route('pesanProduk')}}" method="GET" >
+  <input type="text" name="nama_toko" value="{{$data_toko->nama}}" id="" hidden>
+  <div class="d-flex align-content-between flex-wrap text-center">
+  @foreach($produk_toko as $produk)
+      <input type="radio" name="id_produk" id="id_produk" value="{{$produk->id}}">
+
+      <div class="card shadow-lg m-2" style="width: 200px; height : 340px">
+        <img src="{{url($produk->foto_produk)}}" style="width: 155px;" class="card-img-top mt-4 mb-4 mx-auto" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"><b>{{$produk->nama}}</b></h5>
+          <hr class="m-1">
+          <p class="card-text" style="font-size: 12px; text-align:justify;">{{$produk->deskripsi}}</p>
+        </div>
+      </div>
+    </label>
+  @endforeach
+  </div> 
+  <div class="d-flex justify-content-center m-4">
+    <input dusk="submit-button" type="submit" value="Pesan" id="submit" name="submit"class="btn btn-success" style="width: 500px;">
+  </div>
+
+ 
+
+</form>
+
+
     <div class="mt-4">
       <h5 class=" text-center mb-2"><b>Social Media</b> </h5>
       <div class="d-flex justify-content-center">
@@ -73,13 +101,15 @@
 <div class="pesan text-center mt-5 mb-2">
   <h4><b>PEMESANAN PRODUK & PRODUK YANG DIHASILKAN</b> </h4>
 </div>
+
+
 <form action="{{route('pesanProduk')}}" method="GET">
   <input type="text" name="nama_toko" value="{{$data_toko->nama}}" id="" hidden>
   <div class="d-flex align-content-between flex-wrap text-center">
   @foreach($produk_toko as $produk)
     <label>
-      <input type="radio" name="id_produk" id="emoji" value="{{$produk->id}}">
-      <input type="radio" name="id_produk" id="emoji" value="{{$produk->id}}">
+      <input type="radio" name="id_produk" id="id_produk" value="{{$produk->id}}">
+
       <div class="card shadow-lg m-2" style="width: 200px; height : 340px">
         <img src="{{url($produk->foto_produk)}}" style="width: 155px;" class="card-img-top mt-4 mb-4 mx-auto" alt="...">
         <div class="card-body">
@@ -90,10 +120,12 @@
       </div>
     </label>
   @endforeach
-  </div>
+  </div> 
   <div class="d-flex justify-content-center m-4">
-    <input type="submit" value="Pesan Sekarang" class="btn btn-success" style="width: 500px;">
+    <input dusk="submit-button" type="submit" value="Pesan" id="submit" name="submit"class="btn btn-success" style="width: 500px;">
   </div>
+
+ 
 
 </form>
 

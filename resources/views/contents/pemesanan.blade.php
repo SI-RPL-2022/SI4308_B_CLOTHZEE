@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                    <input type="submit" value="Pesan Sekarang" class="btn btn-success", style="width: 50%">
+                    <input type="submit" id="pesan" name="pesan" value="Pesan Sekarang" class="btn btn-success", style="width: 50%">
             </div>
         </form>
     </div>
